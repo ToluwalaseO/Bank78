@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Aligns 'Banks' on the left and others to the right */
+    align-items: center; /* Vertically centers content */
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 1.5rem; /* Adjust the size of 'Banks' */
+    margin: 0; /* Remove any default margin */
+}
+
+.merchant-info {
+    text-align: right; /* Aligns the text to the right */
+    margin-left: auto; /* Pushes 'Merchant' and 'Kunbi' to the right */
+    font-size: medium;
+    text-align: left;
+}
+
+.merchant-info p {
+    margin: 0; /* Ensures no extra space between 'Merchant' and 'Kunbi' */
+}
+
+.merchant-info .merchant-text{
+    color: blue;
+}
+
+.add-bank-btn {
+    background-color: #013f80;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 80px;
+    margin-left: 20px; /* Adds space between the button and merchant-info */
+    position: relative;
+    top: 55px;
+}
