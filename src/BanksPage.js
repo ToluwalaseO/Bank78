@@ -1,25 +1,22 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
+import Sidebar2 from './Sidebar2'; 
 import Header from './Header';
 import BankCard from './BankCard';
-import './BanksPage.css'; // Create this file for styling
-
-
-
-
+import './BanksPage.css'; 
 
 const BanksPage = () => {
-  const [banks, setBanks] = useState([
+  const [banks] = useState([
     {
-        img: `${process.env.PUBLIC_URL}/providus2.png`,
+      img: `${process.env.PUBLIC_URL}/providus2.png`,
       name: 'Providus Bank',
       accountName: 'Albert & Sons Limited',
       accountNumber: '0159910659',
       isPrimary: true
     },
     {
-       img: `${process.env.PUBLIC_URL}/wema.png`,
-             name: 'Wema Bank',
+      img: `${process.env.PUBLIC_URL}/wema.png`,
+      name: 'Wema Bank',
       accountName: 'Albert & Sons Limited',
       accountNumber: '0129901910'
     }
@@ -37,13 +34,14 @@ const BanksPage = () => {
 
   return (
     <div className="banks-page">
-      <Sidebar />
+      <Sidebar2 /> 
+      <Sidebar /> 
       <div className="main-content">
         <Header />
         <div className="banks-list">
           <input
             type="text"
-            placeholder="Search out banks here"
+            placeholder="Search banks here"
             value={searchTerm}
             onChange={handleSearch}
             className="search-bar"

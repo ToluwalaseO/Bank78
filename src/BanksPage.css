@@ -1,34 +1,43 @@
 .banks-page {
-    display: flex;
-  }
-  
-  .main-content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .banks-list {
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .header {
-    font-size: 1.5rem; /* Make the text smaller */
-    margin-left: -50; /* Move the text more to the left */
-    margin-bottom: 20px; /* Space between header and search bar */
-    text-align: left;
-  }
-  
-  .search-bar {
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 30px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-  }
-  
-  .bank-cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
+  display: flex;
+}
+
+.main-content {
+  flex: 2;
+  padding: 140px;
+}
+
+.banks-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.header {
+  font-size: 1.5rem; /* Make the text smaller */
+  margin-left: -20px; /* Add 'px' for proper value, but ensure this is intentional */
+  margin-bottom: 20px; /* Space between header and search bar */
+  text-align: left;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+.bank-cards {
+  display: flex;
+  flex-wrap: wrap; /* Ensures the cards wrap to the next line if needed */
+  gap: 20px; /* Optional: Add some space between the cards */
+}
+
+/* Optional styles to align your sidebars */
+.sidebar {
+  width: 250px;
+}
+
+.sidebar2 {
+  width: 250px;
+}

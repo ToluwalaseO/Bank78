@@ -1,9 +1,25 @@
 .sidebar {
-    width: 250px;
-    background-color: #f4f4f4;
-    height: 100vh;
-    padding: 20px;
-  }
+  width: 180px;
+  background-color: #f4f4f4;
+  height: 100vh;
+  position: fixed;
+  left: 120px; /* Shift it more to the left */
+  padding: 20px;
+}
+/* Apply the Georgia font to the entire sidebar */
+.sidebar {
+  font-family: Georgia, serif;  /* Georgia with a fallback to generic serif */
+}
+
+/* Apply Georgia specifically to certain elements if needed */
+.sidebar ul li {
+  font-family: Georgia, serif;
+}
+
+.settings {
+  font-family: Georgia, serif;
+}
+
   
   .sidebar ul {
     list-style-type: none;

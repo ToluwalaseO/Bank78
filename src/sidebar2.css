@@ -1,0 +1,90 @@
+/* General sidebar styles */
+.sidebar2 {
+    width: 40px; /* Width of the sidebar */
+    background-color: #fcfcfc; /* Dark background color */
+    padding: 20px; /* Padding inside the sidebar */
+    height: 100vh; /* Full viewport height */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on the right */
+  }
+  
+  .sidebar2 ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .sidebar2 ul li {
+    margin-bottom: 20px; /* Spacing between each item */
+    font-size: 18px; /* Font size for list items */
+    color: #ecf0f1; /* Light text color */
+    display: flex;
+    align-items: center; /* Align icon and text */
+  }
+  
+  .sidebar2 ul li i {
+    font-size: 20px; /* Icon size */
+    margin-right: 15px; /* Space between icon and text */
+  }
+  
+  
+  .sidebar2 ul li:hover {
+    background-color: #f7f7f7; /* Darken the background on hover */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  /* Set a custom Google font for the sidebar */
+/* Apply the Georgia font to the entire sidebar */
+.sidebar2 {
+  font-family: Georgia, serif;  /* Georgia with a fallback to generic serif */
+}
+
+/* Apply Georgia specifically to certain elements if needed */
+.sidebar2 ul li {
+  font-family: Georgia, serif;
+}
+
+.settings {
+  font-family: Georgia, serif;
+}
+
+
+  /* Icon specific styles */
+  .sidebar2 ul li i.fa-house,
+  .sidebar2 ul li i.fa-file,
+  .sidebar2 ul li i.fa-list,
+  .sidebar2 ul li i.fa-arrow-up,
+  .sidebar2 ul li i.fa-arrow-down,
+  .sidebar2 ul li i.fa-angles-right,
+  .sidebar2 ul li i.fa-square-check,
+  .sidebar2 ul li i.fa-link,
+  .sidebar2 ul li i.fa-user,
+  .sidebar2 ul li i.fa-users,
+  .sidebar2 ul li i.fa-gear {
+    color: #484848; /* Gold color for the icons */
+  }
+  
+  /* Typography styles */
+  .sidebar2 ul li p {
+    margin: 0;
+    font-size: 16px; /* Slightly smaller text */
+    color: #ecf0f1; /* Same color as the icons */
+  }
+  
+  .sidebar2 h5 {
+    color: #bbbbbb; /* Gold color for the header */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+  
+  /* Responsive behavior */
+  @media screen and (max-width: 768px) {
+    .sidebar2 {
+      width: 100%; /* Full width on small screens */
+      height: auto; /* Auto height */
+      position: relative;
+    }
+  }
+  
