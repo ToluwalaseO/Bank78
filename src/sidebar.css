@@ -1,32 +1,66 @@
+/* Sidebar container */
 .sidebar {
-  width: 180px;
-  background-color: #f4f4f4;
-  height: 100vh;
-  position: fixed;
-  left: 120px; /* Shift it more to the left */
-  padding: 20px;
-}
-/* Apply the Georgia font to the entire sidebar */
-.sidebar {
-  font-family: Georgia, serif;  /* Georgia with a fallback to generic serif */
-}
-
-/* Apply Georgia specifically to certain elements if needed */
-.sidebar ul li {
-  font-family: Georgia, serif;
+  width: 248px;
+  height: 839px;
+  overflow-y: auto; /* Enable scrolling if necessary */
+  background-color: white;
+  font-family: inter, sans-serif;
+  border-right: white;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  margin-top: 130px;
+  top: 24px;
+  left: 200px;
 }
 
-.settings {
-  font-family: Georgia, serif;
+/* Sidebar heading styling */
+.sidebar h5 {
+  margin: 15px 0; /* Space around heading */
+  padding: 0 15px; /* Padding for better layout */
+  color: #0E2354; /* Contrast with the background */
+  size:10px;
+  font-weight: 600;
+  
 }
 
-  
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    margin: 15px 0;
-  }
-  
+/* Sidebar list styling */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+/* Styling for list items */
+.sidebar li {
+  margin: 5px 0; /* Add margin for spacing */
+  padding: 10px 15px; /* Add padding for better layout */
+  border-bottom: none; /* No borders */
+  color: #81899E; /* Contrast with the background */
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 10px;
+  weight:400;
+  size:12px;
+  line-height: 16px;
+}
+
+/* Icon styling */
+.sidebar i {
+  margin-right: 10px; /* Space between icon and text */
+  flex-shrink: 0;
+  margin-right:10px;
+  width: 16px;
+  height: 16px;
+}
+
+/* Adjust visibility of dividers/icons only if necessary */
+.icon-divider, .sidebar-divider {
+  display: block; /* Uncomment if you want to show dividers */
+}
+
+/* Ensure the parent container background is white */
+.sidebar-parent, .banks-page {
+  background-color: white;
+}

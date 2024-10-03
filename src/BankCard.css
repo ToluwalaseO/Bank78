@@ -1,52 +1,166 @@
+
 .banks-page {
     display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white; 
   }
   
-.main-content {
-flex: 1;
-padding: 20px;
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+ .search-bar {
+  width: 320px;
+  height: 40px;
+  padding: 10px; 
+  border: 1px solid #E6E7EC;
+  border-radius: 4px;
+  background: #FFFFFF;
+  opacity: 0.8;
+  box-sizing: border-box; 
+   position: absolute;
+  left: 480px;
+  top: 88px;
+  z-index: 10; 
+ }
+
+  .bank-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; 
+  }
+  
+
+  .bank-card {
+    position: relative; 
+    width: 241px;
+    height: 140px;
+    background: #FFFFFF;
+    border: 1px solid #F2F4F7;
+    box-shadow: 0px 1px 2px rgba(180, 191, 201, 0.12);
+    border-radius: 4px; 
+    padding: 16px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 320px;
+    margin-top: 280px;
+    
 }
+  
+  
+  .bank-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; 
+  }
+  
+  
+  .bank-card img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover; 
+    margin-right: 10px; 
+    border-radius: 50%; 
+  }
+  
+  
+  .bank-card-info .bank-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    line-height: 18px;
+    color: #1D2939;
+    bottom:123px;
+    left:40px;
+  }
+  
+ 
+  .bank-card-info .account-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #34373F;
+    margin: 0;
+  }
+  
+  
+  .bank-card-info .account-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    color: #667085;
+    margin: 0;
+  }
+  
+  .option-button {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 4px 2px;
+    gap: 2px;
+    position: absolute;
+    width: 17px;
+    height: 11px;
+    right: 10px;
+    top: 37px;
+    transform: rotate(0deg); 
+  }
+  
+  .option-button i {
+    color: #333; 
+    font-size: 12px; 
+  }
+  
 
-.search-bar {
-width: 100%;
-padding: 10px;
-margin-bottom: 20px;
-border: 1px solid #ddd;
-border-radius: 4px;
-}
-
-.bank-cards {
-display: flex;
-flex-wrap: wrap;
-margin-left: 10px;
-}
-
-.bank-cards p {
-    display: flex;         /* Make image and text align horizontally */
-    align-items: center;   /* Vertically align the image and text */
-    font-size: 1rem;
-    text-align: left;
-
-}
-
-.bank-card img {
-    width: 50px;           /* Adjust width */
-    height: auto;          /* Maintain aspect ratio */
-    object-fit: cover;     /* Ensure the image fits properly */
-    margin-right: 0px;    /* Adds space between the image and text */
-    align-items: left;
-    margin-left: -20px
-}
-
-
-.bank-cards button{
-    margin: 10px;
-}
-
-.bank-card-wrap{
-    padding : 20px;
-    border: 1px solid grey;
+  .collections {
+    width: 140px;      
+    height: 50px;     
+    background-color: #ffffff; 
+    margin: 20px auto; 
+    position: relative;
+    bottom: 140px;
+    z-index: 1;
+    font-size: 11px;
+    left:300px;
+    box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.19);
     border-radius: 4px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+  }
+
+  .collections p{
+    margin-left: 16px;
+    font-size: 16px;
+    top: 12px;
+    position: relative;
+  }
+
+  .collections i{
+    font-size: 16px;
+    margin-right: 6px;
+  }
+
+.primary{
+  background: rgba(0, 196, 140, 0.07);
+  border-radius: 10px;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 8px;
+gap: 10px;
+
+position: relative;
+width: 50px;
+height: 20px;
+left: 520px;
+bottom: 130px;
+color:#00C48C;
+font-family: 'Inter';
+font-size: 12px;
+
 }
+

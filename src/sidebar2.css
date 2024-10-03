@@ -1,90 +1,106 @@
-/* General sidebar styles */
+/* Dashboard Menu */
 .sidebar2 {
-    width: 40px; /* Width of the sidebar */
-    background-color: #fcfcfc; /* Dark background color */
-    padding: 20px; /* Padding inside the sidebar */
-    height: 100vh; /* Full viewport height */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on the right */
-  }
-  
-  .sidebar2 ul {
-    list-style-type: none; /* Remove default list style */
-    padding: 0; /* Remove default padding */
-  }
-  
-  .sidebar2 ul li {
-    margin-bottom: 20px; /* Spacing between each item */
-    font-size: 18px; /* Font size for list items */
-    color: #ecf0f1; /* Light text color */
-    display: flex;
-    align-items: center; /* Align icon and text */
-  }
-  
-  .sidebar2 ul li i {
-    font-size: 20px; /* Icon size */
-    margin-right: 15px; /* Space between icon and text */
-  }
-  
-  
-  .sidebar2 ul li:hover {
-    background-color: #f7f7f7; /* Darken the background on hover */
-    padding: 10px;
-    border-radius: 10px; /* Rounded corners */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  /* Set a custom Google font for the sidebar */
-/* Apply the Georgia font to the entire sidebar */
-.sidebar2 {
-  font-family: Georgia, serif;  /* Georgia with a fallback to generic serif */
+  position: absolute;
+  width: 76px; /* Adjusted width */
+  height: 900px; /* Fixed height */
+  left: 0;
+  top: 0;
+  background: #ffffff; /* Background color */
+  border-right: 1px solid grey; /* Grey border on the right */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on the right */
+  font-family: Georgia, serif; /* Custom font */
+  padding: 20px; /* Padding inside the sidebar */
+  margin-bottom: 80px;
 }
 
-/* Apply Georgia specifically to certain elements if needed */
+/* Sidebar list styling */
+.sidebar2 ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 7px; /* Remove default padding */
+  position: relative;
+  width: 60px;
+  height: 464px;
+  top:5px;
+  left:8px;
+  Radius:4px;
+  Gap:24px;
+  
+}
+
+/* Sidebar list items */
 .sidebar2 ul li {
-  font-family: Georgia, serif;
+  margin-bottom: 40px; /* Spacing between each item */
+  font-size: 16px; /* Font size for list items */
+  color: #ffffff; /* Light text color */
+  display: flex; /* Align icon and text */
+  align-items: center; /* Center vertically */
+  padding-left: 10px; /* Shift icons to the left */
 }
 
-.settings {
-  font-family: Georgia, serif;
+/* Icon styling */
+.sidebar2 ul li i {
+  font-size: 20px; /* Icon size */
+  margin-right: 10px; /* Space between icon and text */
+  color: #81899e; /* Color for the icons */
+  width:12.33px;
+  height: 12.33px;
+  top:1.83px;
+  left:1.83px;
+  border: 1.2px;
+  font-size: 16px;
+  
+  
 }
 
 
-  /* Icon specific styles */
-  .sidebar2 ul li i.fa-house,
-  .sidebar2 ul li i.fa-file,
-  .sidebar2 ul li i.fa-list,
-  .sidebar2 ul li i.fa-arrow-up,
-  .sidebar2 ul li i.fa-arrow-down,
-  .sidebar2 ul li i.fa-angles-right,
-  .sidebar2 ul li i.fa-square-check,
-  .sidebar2 ul li i.fa-link,
-  .sidebar2 ul li i.fa-user,
-  .sidebar2 ul li i.fa-users,
-  .sidebar2 ul li i.fa-gear {
-    color: #484848; /* Gold color for the icons */
-  }
+/* Hover effect */
+.sidebar2 ul li:hover {
+  background-color: #f7f7f7; /* Darken the background on hover */
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Typography styles */
+.sidebar2 ul li p {
+  margin: 0;
+  font-size: 12px; /* Slightly smaller text */
+  color: #ffffff; /* Same color as the icons */
+}
+
+.sidebar2 h5 {
+  color: #bbbbbb; /* Header color */
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+.sidebar-logo {
+  width: 32px; /* Adjust the width as per your requirement */
+  height: 26px; /* Maintain aspect ratio */
+  margin-bottom: 100px;
   
-  /* Typography styles */
-  .sidebar2 ul li p {
-    margin: 0;
-    font-size: 16px; /* Slightly smaller text */
-    color: #ecf0f1; /* Same color as the icons */
-  }
-  
-  .sidebar2 h5 {
-    color: #bbbbbb; /* Gold color for the header */
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 22px;
-  }
-  
-  /* Responsive behavior */
-  @media screen and (max-width: 768px) {
-    .sidebar2 {
-      width: 100%; /* Full width on small screens */
-      height: auto; /* Auto height */
-      position: relative;
-    }
-  }
-  
+}
+
+
+.settings{
+  bottom: -260px;
+  position: relative;
+  right: -15px;
+  color: #81899E;
+}
+
+.circle1{
+  bottom:-200px;
+  position: relative;
+  right: -14px;
+  font-size: 9.7px;
+}
+
+.circle2{
+  bottom:-189.5px;
+  position: relative;
+  right: -21px;
+  font-size: 10px;
+}

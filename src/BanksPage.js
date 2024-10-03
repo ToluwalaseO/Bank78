@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import Sidebar2 from './Sidebar2'; 
 import Header from './Header';
+import Header2 from './Header2';
 import BankCard from './BankCard';
 import './BanksPage.css'; 
+import { FaSearch } from 'react-icons/fa';
 
 const BanksPage = () => {
   const [banks] = useState([
     {
+      collections: true,
       img: `${process.env.PUBLIC_URL}/providus2.png`,
       name: 'Providus Bank',
       accountName: 'Albert & Sons Limited',
@@ -36,16 +39,23 @@ const BanksPage = () => {
     <div className="banks-page">
       <Sidebar2 /> 
       <Sidebar /> 
+      
       <div className="main-content">
         <Header />
+        <div className="new-content">
+          <Header2 />
+        </div>
         <div className="banks-list">
-          <input
-            type="text"
-            placeholder="Search banks here"
-            value={searchTerm}
-            onChange={handleSearch}
-            className="search-bar"
-          />
+          <div className="search-bar-container">
+            <input
+              type="text"
+              placeholder="       Search out banks here"
+              value={searchTerm}
+              onChange={handleSearch}
+              className="search-bar"
+            />
+            <FaSearch className="search-bar-icon" />
+          </div>
           <div className="bank-cards">
             {filteredBanks.map((bank, index) => (
               <BankCard key={index} bank={bank} />

@@ -1,15 +1,17 @@
 import React from 'react';
-import './Header.css'; // Create this file for styling
+import './Header.css'; 
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>Banks</h1>
-      <div className="merchant-info">
-        <p className="merchant-text">Merchant</p> {/* Add class 'merchant-text' here */}
-        <p>Kunbi Folorunsho</p>
+      <h4 className="banks-title">Banks</h4> 
+      
+        
         <button className="add-bank-btn">+ Add Bank</button>
-      </div>
+      
+      
+      <div className="rectangle"></div>
+      <div className="rectangle2"></div>
     </div>
   );
 };

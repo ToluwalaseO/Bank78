@@ -1,0 +1,92 @@
+.header2 {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 500px;
+    margin-left: -15px;
+    margin-top: -600px;
+    width: 1363px;
+    height: 61px;
+    justify-content: flex-end;
+}
+
+.merchant-info {
+    display: flex;
+    align-items: center;
+    border-color: #111111;
+}
+
+.merchant-text {
+    font-weight: 500;
+    color: #2357D1;
+    font-size: 13px;
+    line-height: 15.6px;
+    position: relative;
+    left: 62.8px;
+    font-family: 'Calibre', sans-serif;
+}
+
+.merchant-name {
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #676E7E;
+    font-weight: 400;
+    margin-bottom: -20px;
+    right: -8px;
+    position: relative;
+    font-family: 'Calibre', sans-serif;
+}
+
+.icon {
+    font-size: 34px;
+    margin-left: 10px;
+    left: -150px;
+    position: relative;
+    width: 34px;
+    height: 34px;
+}
+
+.icon:hover {
+    color: #FFD43B;
+    transition: color 0.3s ease;
+}
+
+.icon2 {
+    font-size: 34px;
+    margin-left: 10px;
+    left: 12px;
+    position: relative;
+    width: 34px;
+    height: 34px;
+}
+
+.Arrowdown {
+    left: -90.2px;
+    top: 16px;
+    position: relative;
+    font-size: 12px;
+}
+
+.circle {
+    left: -21px;
+    bottom: 8px;
+    font-size: 6px;
+    position: relative;
+    z-index: 1;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    border-left: 2px solid #E6E7EC;
+    padding-left: 10px;
+}
+
+.icon3 {
+    position: relative;
+    left: -21px;
+    bottom: 10px;
+    font-size: 6px;
+}

@@ -1,43 +1,97 @@
 .banks-page {
   display: flex;
+  width: 1438px;
+  background-color: white;
 }
 
 .main-content {
-  flex: 2;
+  flex-grow: 1;
   padding: 140px;
 }
 
 .banks-list {
   margin-top: 20px;
   text-align: left;
+  position: relative;
 }
 
 .header {
-  font-size: 1.5rem; /* Make the text smaller */
-  margin-left: -20px; /* Add 'px' for proper value, but ensure this is intentional */
-  margin-bottom: 20px; /* Space between header and search bar */
+  font-size: 1.5rem;
+  margin-left: -20px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  position: relative;
+  right: 160px;
+}
+
 .search-bar {
-  width: 50%;
+  width: 100%;
   padding: 10px;
-  margin-bottom: 30px;
+  padding-right: 20px;
   border: 1px solid #ddd;
   border-radius: 2px;
 }
 
-.bank-cards {
-  display: flex;
-  flex-wrap: wrap; /* Ensures the cards wrap to the next line if needed */
-  gap: 20px; /* Optional: Add some space between the cards */
+.search-bar-icon {
+  position: absolute;
+  left: 490px;
+  font-size: 18px;
+  color: #333;
+  margin-top: 215px;
+  pointer-events: none;
 }
 
-/* Optional styles to align your sidebars */
-.sidebar {
-  width: 250px;
+.bank-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .sidebar2 {
-  width: 250px;
+  width: 76px;
+  flex-shrink: 0;
+  height: 900px;
+  overflow: hidden;
+  left: 30px;
+}
+
+.sidebar {
+  width: 248px;
+  flex-shrink: 0;
+  height: 839px;
+  overflow: hidden;
+  background-color: white;
+  font-family: Georgia, serif;
+  right: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.icon-divider {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+  
+  .sidebar2 {
+    width: 50px;
+  }
 }
